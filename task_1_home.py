@@ -8,15 +8,18 @@ try:
             raise NoMoney()
             break
         print(startMoney)
-        choset  = int(input('1.ГОРКИ СМОРКИ - 15 грн.\n 2.Toilet - 30grn \n 3.FearRoom - 55grn\n 4.Exit \n Choise your :'))
+        choset  = int(input('\n1.Американські гірки - 15 грн.\n 2.Кімната страху - 30 грн \n 3.Акваленд - 55 грн\n 0.Вихід \n Виберіть атракціон :'))
 
         if choset == 1:
-            startMoney -= 15
+            if startMoney >= 15:
+                startMoney -= 15
         elif choset == 2:
-            startMoney -= 30
+            if startMoney >= 30:
+                startMoney -= 30
         elif choset == 3:
-            startMoney -= 55
-        elif choset == 4:
+            if startMoney >= 45:
+                startMoney -= 55
+        elif choset == 0:
             print('Exit')
             break
     
