@@ -16,9 +16,9 @@ try:
             Cels = round((Fahr - 32)/ 1.8, 2)
             print(f"{Fahr} градусів Цельсію = {Cels} градусів Фаренгейта \n")
         elif choice == 3:
-            print("Goob bye!")
+            print("Бувай")
             exit = True
         else:
             print("Оберіть пункт зі списку")
 except ValueError:
-    print("Error! Enter number!")
+    print("Помилка! Введіть число!")

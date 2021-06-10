@@ -6,7 +6,6 @@ try:
     while True:    
         if startMoney <= 0:
             raise NoMoney()
-            break
         print(startMoney)
         choset  = int(input('\n1.Американські гірки - 15 грн.\n 2.Кімната страху - 30 грн \n 3.Акваленд - 55 грн\n 0.Вихід \n Виберіть атракціон :'))
 
@@ -20,11 +19,11 @@ try:
             if startMoney >= 45:
                 startMoney -= 55
         elif choset == 0:
-            print('Exit')
+            print('Бувай')
             break
     
-except ValueError as e:
-    print(e)
+except ValueError:
+    print("\nError! Enter number!")
 except NoMoney as e:
-    print('No money no honey')
+    print('No money \nno honey')
 

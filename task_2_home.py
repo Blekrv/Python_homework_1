@@ -9,7 +9,7 @@ try:
     else:
         raise WrongPassword() 
 
-except ValueError as e:
-    print(e)
+except ValueError:
+    print('Error! Enter number!')
 except WrongPassword:
     print('Wrong Password')

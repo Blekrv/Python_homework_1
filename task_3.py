@@ -1,8 +1,8 @@
 try:
-    revolutions = float(input("Enter Mars revolutions: "))
+    revolutions = float(input("Введіть кількість обертів Марсу: "))
     earthRevolutions = round(686 * revolutions / 365, 1)
     if revolutions <= 0:
         raise ValueError
-    print(f'This period corresponds to {earthRevolutions} Earth years')
+    print(f'{revolutions} обертів Марсу = {earthRevolutions} обертів Землі')
 except ValueError:
-    print('\nERROR! Incorrect data. Only positive numbers can be entered.')
+    print('\nПомилка! Введіть додатнє число!')

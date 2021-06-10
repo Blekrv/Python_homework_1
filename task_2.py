@@ -9,7 +9,7 @@ try:
         raise Wrong()
     cost = price * duration
     print(cost)
-except ValueError as e:
-    print(e)
+except ValueError :
+    print("Error! Enter number")
 except Wrong:
-    print("Enter correct data!!")
+    print("Введіть додатнє число!")
